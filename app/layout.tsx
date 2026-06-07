@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {IChildren} from "../lib/interfaces";
 import {Providers} from "../lib/providers";
+import {AppShell} from "@/components/layout/AppShell";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,11 @@ export default function RootLayout({ children }: IChildren) {
           data-color-scheme="dark"
           className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
           <body className="min-h-full flex flex-col">
-            <Providers>{children}</Providers>
+            <Providers>
+                <AppShell>
+                    {children}
+                </AppShell>
+            </Providers>
           </body>
       </html>
   );
