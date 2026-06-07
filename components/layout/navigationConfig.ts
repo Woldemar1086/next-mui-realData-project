@@ -6,7 +6,7 @@ import RssFeedIcon from '@mui/icons-material/RssFeed';
 export const NavigationItems = [
     {
         title: 'Dashboard',
-        path: '/dashboard',
+        path: '/',
         icon: DashboardIcon
     },
     {
