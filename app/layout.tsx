@@ -25,8 +25,8 @@ export default function RootLayout({ children }: IChildren) {
       <html
           lang="en"
           data-color-scheme="dark"
-          className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-          <body className="min-h-full flex flex-col">
+          className={`${geistSans.variable} ${geistMono.variable} `}>
+          <body>
             <Providers>
                 <AppShell>
                     {children}
