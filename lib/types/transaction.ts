@@ -13,3 +13,10 @@ export interface Transaction {
     status: TransactionStatus;
     chain: Chain;
 }
+
+export interface TransactionsPage {
+    items: Transaction[];
+    total: number;
+    page: number;
+    pageSize: number
+}
